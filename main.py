@@ -31,7 +31,7 @@ def getBinaryFromFile():
 	bits = ''
 	for char in f.read():
 		asc = chr(char)
-		binary = convertCharToBin(asc.encode("ascii"))
+		binary = convertCharToBin(asc.encode("utf-8"))
 		bits += binary
 	return bits
 
